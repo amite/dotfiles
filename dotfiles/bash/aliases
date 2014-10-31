@@ -14,9 +14,6 @@ alias mtr=/usr/local/sbin/mtr
 
 # Project Shortcuts
 
-alias della="cd /Users/amiterandole/Sites/della/dellastalk"
-alias homepage="cd /Users/amiterandole/Dropbox/projects/netmagic/upgrade/home-page"
-alias hero="cd /Users/amiterandole/Sites/nms/hero"
 # Git Aliases
 
 alias gst='git status'

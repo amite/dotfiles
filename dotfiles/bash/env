@@ -1,7 +1,5 @@
 source ~/.local/bin/bashmarks.sh
-[ -s "/Users/amiterandole/.nvm/nvm.sh" ] && . "/Users/amiterandole/.nvm/nvm.sh" # This loads nvm
 
-source ~/.git-prompt.sh
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
@@ -9,10 +7,10 @@ export PATH=$PATH:~bin
 export PATH=/usr/local/git/bin:/usr/local/sbin:$PATH
 export PATH=vendor/bin:$PATH
 
-export PATH=~/.composer/vendor/bin:$PATH
+# export PATH=~/.composer/vendor/bin:$PATH
 
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
+# export GOROOT=/usr/local/go
+# export PATH=$PATH:$GOROOT/bin
 
 export PATH
 export EDITOR='vi'
