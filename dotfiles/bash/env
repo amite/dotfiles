@@ -1,0 +1,41 @@
+source ~/.local/bin/bashmarks.sh
+[ -s "/Users/amiterandole/.nvm/nvm.sh" ] && . "/Users/amiterandole/.nvm/nvm.sh" # This loads nvm
+
+source ~/.git-prompt.sh
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+export PATH=$PATH:~bin
+export PATH=/usr/local/git/bin:/usr/local/sbin:$PATH
+export PATH=vendor/bin:$PATH
+
+export PATH=~/.composer/vendor/bin:$PATH
+
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+
+export PATH
+export EDITOR='vi'
+
+
+
+
+export APPLICATION_ENV='development'
+
+eval "$(rbenv init -)"
+
+# Install a grunt plugin and save to devDependencies
+function gi() {
+  npm install --save-dev grunt-"$@"
+}
+
+# Install a grunt-contrib plugin and save to devDependencies
+function gci() {
+  npm install --save-dev grunt-contrib-"$@"
+}
+
+# Create a new directory and enter it
+function mkd() {
+    mkdir -p "$@" && cd "$@"
+}
+

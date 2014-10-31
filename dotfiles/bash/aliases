@@ -1,0 +1,168 @@
+alias mtr='/usr/local/sbin/mtr'
+alias tu='top -o cpu' #cpu
+alias tm='top -o vsize' #memory
+alias ll='ls -alh'
+
+HISTFILESIZE=2000000
+HISTSIZE=100000
+HISTTIMEFORMAT='%F %T '
+HISTIGNORE="&:[ ]*"
+export HISTTIMEFORMAT HISTSIZE HISTFILESIZE HISTIGNORE
+
+alias mtr=/usr/local/sbin/mtr
+
+
+# Project Shortcuts
+
+alias della="cd /Users/amiterandole/Sites/della/dellastalk"
+alias homepage="cd /Users/amiterandole/Dropbox/projects/netmagic/upgrade/home-page"
+alias hero="cd /Users/amiterandole/Sites/nms/hero"
+# Git Aliases
+
+alias gst='git status'
+alias gc='git clone'
+alias gco='git checkout'
+alias gl='git pull'
+alias gpom="git pull origin master"
+alias gp='git push -u origin master'
+alias gd='git diff'
+alias gb='git branch'
+alias opengit='git config -e'
+alias glp='git log --pretty=oneline'
+alias glm2='git log --pretty=oneline --max-count=2'
+alias glm5='git log --pretty=oneline --max-count=5'
+alias hist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+alias gitcache='git config --global credential.helper cache'
+alias ga='git add .'
+alias gcm='git commit -m'
+alias gcma='git commit -a -m'
+alias pu=!"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+alias diff="git diff"
+alias gg='git log --oneline --abbrev-commit --all --graph --decorate --color'
+
+
+# nginx shortcuts
+alias nst="sudo service nginx status"
+alias ns="sudo service nginx start"
+alias nr="sudo service nginx restart"
+
+# bash shortcuts
+
+alias openbash='s ~/.bash_profile'
+alias dot='subl ~/bin/dotfiles/'
+alias startsql='mysql.server start'
+alias stopsql='mysql.server stop'
+alias htdocs="cd /Applications/MAMP/htdocs/"
+alias spacetime="cd /Users/amiterandole/Sites/projects/js/mstwjs_code"
+alias mailers="cd Dropbox/projects/netmagic/mailers/HTML-Mailers/"
+alias cdvim="cd /Users/amiterandole/.vim"
+# alias mysql="mysql –socket=/var/lib/mysql/mysql.sock"
+# alias mysql="/usr/local/mysql/bin/mysql"
+alias reload="source ~/bin/dotfiles/bash/aliases"
+# alias su="sublime"
+alias books="cd /Users/amiterandole/Documents/books"
+
+
+
+# nodejs
+alias genlist="npm search yeoman-generator"
+alias ninstall="npm install -g"
+
+# capistrano
+alias cap="bundle exec cap"
+
+# rails shortcuts
+alias r='rails'
+alias lg="cd /usr/local/var/rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems"
+
+# Quick change directories
+alias sites="cd ~/Sites"
+alias mate='open -a TextMate.app'
+alias desk="cd ~/Desktop"
+alias home="cd ~"
+alias dbox="cd /Users/amiterandole/Dropbox/"
+alias cur="cd /Users/amiterandole/Documents/current"
+alias web="cd /Users/amiterandole/Documents/current/webdev"
+alias ra="cd /Users/amiterandole/Documents/current/rails"
+alias js="cd /Users/amiterandole/Documents/current/js_sandbox"
+alias ang="cd /Users/amiterandole/Documents/current/js_sandbox/angular"
+alias la='cd /Users/amiterandole/Sites/larasites'
+
+alias migrate="php artisan migrate:install"
+alias createmigration="php artisan generate:migration"
+alias runmigration="php artisan migrate"
+alias mpear="/Applications/MAMP/bin/php5.3/bin/pear"
+alias u="phpunit"
+
+alias startapache="sudo apachectl start"
+alias stopapache="sudo apachectl stop"
+alias restartapache="apachectl restart"
+alias yserver="yeoman server"
+alias yinit="yeoman init"
+# alias pserve="python -m SimpleHTTPServer"
+alias gs="grunt server"
+
+
+alias art="php artisan"
+alias autoload="composer dump-autoload"
+alias devinstall="composer install --dev"
+alias as='php artisan serve'
+
+alias openvhosts="sudo s /etc/apache2/extra/httpd-vhosts.conf"
+alias openhosts="sudo s /etc/hosts"
+
+alias books="cd /Users/amiterandole/Documents/books "
+alias ..="cd .."
+alias removeall="rm -rf ./*"
+
+alias compilecoffee="coffee -o lib/ -cw src/"
+alias zipr="zip -r"
+
+# alias t="~/todo.sh"
+alias vm='ssh vagrant@127.0.0.1 -p 2222'
+
+alias shunit="/Users/amiterandole/bin/shunit2-2.1.6/src/shunit2"
+
+function ser() {
+	local port="${1:-8000}"
+	open "http://localhost:${port}/"
+	python -m SimpleHTTPServer "$port"
+}
+
+function take {
+	mkdir $1
+	cd $1
+}
+
+function tx {
+  filename=$1
+  if [[ $filename ]]; then
+    install -m 766 /dev/null $filename
+    echo '#!/usr/bin/env bash' > $filename
+    exit 0
+  else
+    echo "you forgot to give me a script name"
+  fi
+}
+
+function myip {
+  curl ifconfig.me/ip
+}
+
+function digwp {
+  dig +short txt $1.wp.dg.cx
+}
+
+function gg() {
+	git commit -v -a -, "$*"
+}
+
+# Install a grunt plugin and save to devDependencies
+function gi() {
+  npm install --save-dev grunt-"$@"
+}
+
+# Install a grunt-contrib plugin and save to devDependencies
+function gci() {
+  npm install --save-dev grunt-contrib-"$@"
+}
