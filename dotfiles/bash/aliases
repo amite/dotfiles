@@ -69,8 +69,17 @@ alias ninstall="npm install -g"
 alias cap="bundle exec cap"
 
 # rails shortcuts
-alias r='rails'
+alias r='bundle exec rails'
+alias be='bundle exec'
+alias bi='bundle install'
 alias lg="cd /usr/local/var/rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems"
+
+# node.js shortcuts
+alias ln="learnyounode"
+alias lnv="learnyounode verify "
+alias lnr="learnyounode run "
+
+alias redis="redis-server /usr/local/etc/redis.conf"
 
 # Quick change directories
 alias sites="cd ~/Sites"
@@ -84,6 +93,8 @@ alias ra="cd /Users/amiterandole/Documents/current/rails"
 alias js="cd /Users/amiterandole/Documents/current/js_sandbox"
 alias ang="cd /Users/amiterandole/Documents/current/js_sandbox/angular"
 alias la='cd /Users/amiterandole/Sites/larasites'
+
+alias hs='subl /Users/amiterandole/Sites/homestead'
 
 alias migrate="php artisan migrate:install"
 alias createmigration="php artisan generate:migration"
