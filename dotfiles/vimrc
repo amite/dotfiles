@@ -24,6 +24,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-ragtag'
 Plugin 'bling/vim-airline'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-rails'
 
 
 " All of your Plugins must be added before the following line
