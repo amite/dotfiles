@@ -37,3 +37,7 @@ function mkd() {
     mkdir -p "$@" && cd "$@"
 }
 
+function git_diff() {
+  git diff --no-ext-diff -w "$@" | vim -R -
+}
+

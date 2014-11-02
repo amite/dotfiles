@@ -3,6 +3,8 @@ alias tu='top -o cpu' #cpu
 alias tm='top -o vsize' #memory
 alias ll='ls -alh'
 
+alias vim="stty stop '' -ixoff; vim"
+
 HISTFILESIZE=2000000
 HISTSIZE=100000
 HISTTIMEFORMAT='%F %T '
