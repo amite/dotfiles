@@ -63,9 +63,13 @@ alias books="cd /Users/amiterandole/Documents/books"
 
 
 
-# nodejs
+# nodejs shortcuts
 alias genlist="npm search yeoman-generator"
 alias ninstall="npm install -g"
+alias lrn="learnyounode"
+alias lrnv="learnyounode verify "
+alias lnr="learnyounode run "
+alias st="stream-adventure"
 
 # capistrano
 alias cap="bundle exec cap"
@@ -76,10 +80,6 @@ alias be='bundle exec'
 alias bi='bundle install'
 alias lg="cd /usr/local/var/rbenv/versions/2.0.0-p195/lib/ruby/gems/2.0.0/gems"
 
-# node.js shortcuts
-alias ln="learnyounode"
-alias lnv="learnyounode verify "
-alias lnr="learnyounode run "
 
 alias redis="redis-server /usr/local/etc/redis.conf"
 
@@ -111,7 +111,7 @@ alias yserver="yeoman server"
 alias yinit="yeoman init"
 # alias pserve="python -m SimpleHTTPServer"
 alias gs="grunt server"
-
+alias gd="git diff"
 
 alias art="php artisan"
 alias autoload="composer dump-autoload"

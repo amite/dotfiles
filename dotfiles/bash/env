@@ -1,10 +1,13 @@
 source ~/.local/bin/bashmarks.sh
+export PATH=/usr/local/bin:$PATH
 
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin
+# export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/mysql/bin
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export PATH=$PATH:~bin
-export PATH=/usr/local/git/bin:/usr/local/sbin:$PATH
+# export PATH='/usr/local/bin:$PATH'
+
+# export PATH=$PATH:~bin
+# export PATH=/usr/local/git/bin:/usr/local/sbin:$PATH
 export PATH=vendor/bin:$PATH
 
 # export PATH=~/.composer/vendor/bin:$PATH
