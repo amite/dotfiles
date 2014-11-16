@@ -61,7 +61,9 @@ alias reload="source ~/bin/dotfiles/bash/aliases"
 # alias su="sublime"
 alias books="cd /Users/amiterandole/Documents/books"
 
-
+# golang shortcuts
+alias gr="go run"
+alias gb="go build"
 
 # nodejs shortcuts
 alias genlist="npm search yeoman-generator"
@@ -165,6 +167,10 @@ function digwp {
 
 function gg() {
 	git commit -v -a -, "$*"
+}
+
+function torr() {
+  peerflix $1 --vlc
 }
 
 # Install a grunt plugin and save to devDependencies
